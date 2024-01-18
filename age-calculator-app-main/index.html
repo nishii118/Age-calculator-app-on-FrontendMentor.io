@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Age calculator app</title>
 
-  Day
-  DD
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="cart-container">
+      <div class="cart-container__header">
+        <form action="" class="input-container">
+          <label for="day-input"  id="first-label">DAY</label>
+          <input type="text" id="day-input" placeholder="DD" />
+          <label for="day-input" class="error-noti hide">This field is required</label>
+        </form>
+        <form action="" class="input-container">
+          <label for="month-input"  id="first-label">MONTH</label>
+          <input type="text" id="month-input" placeholder="MM" />
+          <label for="month-input" class="error-noti  hide">This field is required</label>
+        </form>
+        <form action="" class="input-container">
+          <label for="year-input"  id="first-label">YEAR</label>
+          <input type="text" id="year-input" placeholder="YYYY" />
+          <label for="year-input" class="error-noti  hide">This field is required</label>
+        </form>
+      </div>
+      <div class="cart-container__header-bottom">
+        <div class="block-line"></div>
+        <button class="submit-btn">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+        <div class="block-line-second"></div>
+      </div>
+      <div class="cart-container__bottom">
+        <div class="result-container">
+          <div class="result" id="result-year">- -</div>
+          <div class="result-text">years</div>
+        </div>
+        <div class="result-container">
+          <div class="result" id="result-month">- -</div>
+          <div class="result-text">months</div>
+        </div>
+        <div class="result-container">
+          <div class="result" id="result-day">- -</div>
+          <div class="result-text">days</div>
+        </div>
+      </div>
+    </div>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+   
+    <script src="index.js"></script>
+  </body>
 </html>
